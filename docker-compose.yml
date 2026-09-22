@@ -13,7 +13,7 @@ services:
       db:
         condition: service_healthy
     ports:
-      - "3000:3000"
+      - "7000:8067"
     command: >
       sh -c "pnpm exec prisma migrate deploy && pnpm run start"
 
